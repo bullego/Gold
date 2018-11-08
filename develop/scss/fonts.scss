@@ -1,0 +1,39 @@
+@font-face {
+	font-display: swap; // свойство font-display для современных браузеров (старые загрузять шрифты по своему). У swap нет блокировки отображения шрифта, если нужный шрифт не успел загрузиться браузером.. + бесконечное ожидание подмены стандартного/системного шрифта (Arial) на нужный шрифт (Droid)
+    font-family: 'Droid Serif';
+    font-weight: 400;
+    font-style: italic;
+    src: local('Droid Serif Italic'), local('DroidSerif-Italic'),
+    	 url('../fonts/droidserifitalic.woff2') format('woff2'),
+    	 url('../fonts/droidserifitalic.woff') format('woff');
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Roboto Slab Regular'),
+    	 local('RobotoSlab-Regular'),
+    	 url('robotoslabregular.woff2') format('woff2'),
+    	 url('robotoslabregular.woff') format('woff');
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat'),
+    	 local('Montserrat-Regular'),
+    	 url('../fonts/montserrat.woff2') format('woff2'),
+    	 url('../fonts/montserrat.woff') format('woff');
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Montserrat Bold'),
+    	 local('Montserrat-Bold'),
+    	 url('../fonts/montserratbold.woff2') format('woff2'),
+    	 url('../fonts/montserratbold.woff') format('woff');
+}
