@@ -79,7 +79,8 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 	.pipe(cssnano()) // Сжимаем CSS
 	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest(devPath.src + devPath.css.dest));	
+	.pipe(gulp.dest(devPath.src + devPath.css.dest))
+	.pipe(browserSync.reload({stream: true}));	
 });
 
 gulp.task('scripts', ['js-libs'], function() {
